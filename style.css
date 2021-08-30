@@ -1,7 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+
+.max-width{
+    max-width: 1500px;
+    padding: 0 50px;
+    margin: auto;
+}
 /*Nav Bar*/
+
+/* navbar styling */
+.navibar{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+   /* background: teal; */
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navibar .sticky{
+    padding: 10px 0;
+    background: teal;
+}
+
+.navibar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navibar .logo a{
+    color: teal;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.navibar .sticky .logo a{
+    color: grey;
+}
+
+.navibar .menu li
+{
+    list-style: none;
+    display: inline-block;
+}
+
+.navibar .menu li a{
+    display: block;
+    color: grey;
+    font-size: 20px;
+    font-weight: 460;
+    margin-left: 27px;
+    transition: color 0.3s ease;
+}
+
+.navibar .menu li a:hover{
+    color: teal;
+}
+
+.navibar .sticky .menu li a:hover{
+    color: grey;
+}
+
+/* navbar dropdown*/
+.navibar .navi-dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.navibar .dropbutton{
+    background-color:#F7EBEB;
+    color: grey;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 460;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+.navibar .navi-dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+.navibar .navi-dropdown .dropdown-content a{
+    color: teal;
+    text-decoration: none;
+    display: block;
+}
+
+    /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #403E3E;}
+
+    /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* menu btn styling*/
+.menu-tog{
+    color:#000;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*home page styling*/
+.home{
+    display: flex;
+    height: 100vh;
+    color: #403E3E;
+    min-height: 300px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7EBEB;
+}
+
+.home .contact-icon{
+    font-size: 5px;
+    min-height: 10px;
+    position: relative;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40 px;
+}
+
+.home .home-stuff .hello-txt{
+    font-size: 50px;
+}
+
+.home .home-stuff .description-txt{
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.home .home-stuff .passion-txt{
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+}
+
+/*tech/career page styling*/
+.tech .container-fluid{
+    width: 100%;
+    padding-left: auto;
+    padding-right:auto;
+}
+.tech .row:after{
+    max-width: 500px;
+    display: table;
+    clear: both;
+}
+
+.tech .resume-column{
+    padding-top: 10px;
+    height: 500px;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: center;
+    background-color: teal;
+    color: grey;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 40px;
+}
+
+.tech .highlights-column{
+    padding-top: 20px;
+    height: 500px;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: center;
+    background-color: grey;
+    /*color: #006969;*/
+    color: #005757;
+    font-size: 40px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.tech .highlights-column .hihglights-content{
+    font-family: 'Inconsolata', monospace;
+    color: #403E3E;
+}
+
+/* responsive media query start*/
+/* the following code commented out is to make the text 'Hi, my name is...' align with Inaya Rajwani at the top left corner
+@media (max-width:991px){
+
+}
+@media (max-width:991px){
+    
+}*/
+@media (max-width:991px){
+    .max-width{
+        padding: 0 25px;
+    }
+    .menu-tog{
+        display: block;
+        z-index: 1000;
+    }
+    .menu-tog i.active:before{
+        content: "\f00d";
+    }
+    .navibar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 15px;
+        transition: all 0.3s ease;
+    }
+    .navibar .menu .active{
+        left: 0;
+    }
+    .navibar .menu li {
+        display: block;
+    }
+    .navibar .menu li a{
+        display: inline-block;
+        margin: 30px 0;
+    }
+    
+}
