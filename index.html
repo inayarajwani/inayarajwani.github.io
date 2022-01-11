@@ -7,21 +7,20 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
-<body>
     <nav class = "navibar">
         <div class = "max-width">
-            <div class="logo"><a href = "#">Inaya <span>Rajwani</span></a></div>
+            <div class="logo"><a href="#">Inaya <span>Rajwani</span></a></div>
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#tech">Career</a></li>
-                <li><a href="#">Humanity</a></li>
+                <!--<li><a href="#">Humanity</a></li>
                 <div class="navi-dropdown">
                     <button class="dropbutton">Creative</button>
                     <div class="dropdown-content"></div>
                         <a href="#">Fashion</a>
                         <a href="#">Photography</a>
-                </div>
-                <li><a href="#">Resume</a></li>
+                </div> -->
+                <li><a href="InayaRajwani_Resume_2022.pdf">Resume</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="menu-tog">
@@ -31,40 +30,199 @@
     </nav>
 
     <!--Home section-->
-    <section class = "home" id="home">
-        <div class="contact-icon">
-            <img src="images/pinterest.png" link href="https://pin.it/30nh8P8">
-        </div>
-        <div class="max-width">
-            <div class="home-stuff">
-                <div class="hello-txt">Hi, my name is <b>Inaya</b>.</div>
-                <div class="description-txt">I am a Computer Science student and am passionate about </div>
-                <div class="passion-txt"><span class="typing-txt"></span></div>
-            </div>
-        </div>
-    </section>
-
-    <!--About section-->    
-    <section class = "tech" id="tech">
-        <div class="max-width">
-            <div class="tech-stuff">
-                <div class = "container-fluid">
-                    <div class="row">
-                        <!--<div class="dialog-window">-->
-                        <div class="resume-column"><b>Resume</b></div>
-                            <div class="scrollable-content"><a href="tech/Inaya_Rajwani_Resume_2021.docx"></a></div>
-                        <div class="highlights-column"><b>Highlights</b></div>
-                            <div class="highlights-content">
-                                <p>Go Code Girls</p>
-                                <p>Hackathon</p>
-                                <p>Tutor at Coder Crew</p>
-                                <p>Computer Science Student at Ryerson University</p>
-                           </div>
+    <section class="s1">
+    <!-- <section class = "home" id="home"> -->
+        <div class="main-container">
+            <div class = "home-container">
+            <!--
+            <div class="contact-container">
+                <img src="images/pinterest.png" link href="https://pin.it/30nh8P8">
+            </div> -->
+                <div class="max-width"> 
+                    <div class="text-container">
+                        <div class="hello-wrapper">Hi, my name is <b>Inaya</b>.</div>
+                        <div class="description-wrapper">I am a Computer Science student and am passionate about </div>
+                        <div class="passion-wrapper"><span class="typing-txt"></span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!--About section-->    
+    <!-- <section class="s1">
+        <div class = "main-container">
+            <div class="tech-container">
+            <!--<div class = "resume-wrapper">-->
+                    <!--<div class="row">-->
+                        <!--<div class="dialog-window">
+                        <div class="resume-column"><b>Resume</b>
+                            <a href="InayaRajwani_Resume_2022.pdf" id="resume"></a></div>
+                        <div class="highlights-column"><b>Highlights</b>
+                            <div class="highlights">
+                                <p>Go Code Girls</p>
+                                <p>Hackathon</p>
+                                <p>Tutor at Coder Crew</p>
+                                <p>Computer Science Student at Ryerson University</p>
+                           </div> 
+
+            </div>
+        </div>
+    </section> -->
+
+    <!--Projects Section-->
+    <section class="s1">
+        <div class="main-container">
+            <div class="project-container"> 
+                <div class="projects-wrapper"><b>Projects</b>
+                    <!-- <p><font size="-0.1">Hover over the circles to see languages used and type of project</font></p> -->
+                </div>
+                
+                <!-- LEARNTOREAD HACKATHON -->
+
+                <div class="proj-card"> 
+                    <div class="title-wrapper"><b>LearnToRead</b></div>
+                    <div class="other-info">
+                        <a href="https://github.com/inayarajwani/ignition-hacks-2020" id="link">Github</a>
+                        <a href="https://devpost.com/software/learntoread" id="link">Devpost</a>
+                    <!-- <iframe src="images/learntoread.png" id="learntoread" width=100% height="100%"></iframe> -->
+                    </div>
+                    <div class="description">
+                        <p>Description</p>
+                    </div>
+                    <div class="other-info">
+                        <p id="hack">Ignition Hacks 2020</p>
+                        <div class="technologies">
+                            <font color=#F1C3F7>HTML</font>
+                            <font color=#FCA4F8>CSS</font>
+                            <font color=#FC8BF7>Python</font>
+                            <font color=#FC8B91>GoogleVisionAPI</font>
+                        </div>
+                    </div>
+                </div>
+            
+                <!--INTERACTIVE SHOPPING LIST-->
+
+                <div class="proj-card"> 
+                    <div class="title-wrapper"><b>Interactive Shopping List</b></div>
+                    <div class="other-info">
+                        <a href="https://github.com/inayarajwani/Interactive-Shopping-List" id="link">Github</a>
+                    </div>
+                    <div class="description">
+                        <p>Description</p>
+                    </div>
+                    <div class="other-info">
+                        <div class="technologies">
+                            <font color=#FC8BF7>Python</font>
+                        </div>
+                    </div>
+                </div>
+
+                <!--FLIGHT MANIFEST-->
+
+                <div class="proj-card"> 
+                    <div class="title-wrapper"><b>FlightManifest</b></div>
+                    <div class="other-info">
+                        <a href="https://github.com/inayarajwani/FlightManifest" id="link">Github</a>
+                    </div>
+                    <div class="description">
+                        <p>Description</p>
+                    </div>
+                    <div class="other-info">
+                        <div class="technologies">
+                            <font color=#FC8BF7>Java</font>
+                        </div>
+                    </div>
+                </div>
+
+                <!--GO CODE GIRLS-->
+
+                <div class="proj-card"> 
+                    <div class="title-wrapper"><b>LearnToRead</b></div>
+                    <div class="other-info">
+                        <a href="https://github.com/inayarajwani/ignition-hacks-2020" id="link">Github</a>
+                        <a href="https://devpost.com/software/learntoread" id="link">Devpost</a>
+                    <!-- <iframe src="images/learntoread.png" id="learntoread" width=100% height="100%"></iframe> -->
+                    </div>
+                    <div class="description">
+                        <p>Description</p>
+                    </div>
+                    <div class="other-info">
+                        <p id="hack">Ignition Hacks 2020</p>
+                        <div class="technologies">
+                            <font color=#F1C3F7>HTML</font>
+                            <font color=#FCA4F8>CSS</font>
+                            <font color=#FC8BF7>Python</font>
+                            <font color=#FC8B91>GoogleVisionAPI</font>
+                        </div>
+                    </div>
+                </div>
+
+                <!--TUTOR AT CODER CREW-->
+
+                <div class="proj-card"> 
+                    <div class="title-wrapper"><b>LearnToRead</b></div>
+                    <div class="other-info">
+                        <a href="https://github.com/inayarajwani/ignition-hacks-2020" id="link">Github</a>
+                        <a href="https://devpost.com/software/learntoread" id="link">Devpost</a>
+                    <!-- <iframe src="images/learntoread.png" id="learntoread" width=100% height="100%"></iframe> -->
+                    </div>
+                    <div class="description">
+                        <p>Description</p>
+                    </div>
+                    <div class="other-info">
+                        <p id="hack">Ignition Hacks 2020</p>
+                        <div class="technologies">
+                            <font color=#F1C3F7>HTML</font>
+                            <font color=#FCA4F8>CSS</font>
+                            <font color=#FC8BF7>Python</font>
+                            <font color=#FC8B91>GoogleVisionAPI</font>
+                        </div>
+                    </div>
+                </div>
+
+                <!--COMPUTER SCIENCE STUDENT AT RYERSON UNIVERSITY-->
+
+                <div class="proj-card"> 
+                    <div class="title-wrapper"><b>LearnToRead</b></div>
+                    <div class="other-info">
+                        <a href="https://github.com/inayarajwani/ignition-hacks-2020" id="link">Github</a>
+                        <a href="https://devpost.com/software/learntoread" id="link">Devpost</a>
+                    <!-- <iframe src="images/learntoread.png" id="learntoread" width=100% height="100%"></iframe> -->
+                    </div>
+                    <div class="description">
+                        <p>Description</p>
+                    </div>
+                    <div class="other-info">
+                        <p id="hack">Ignition Hacks 2020</p>
+                        <div class="technologies">
+                            <font color=#F1C3F7>HTML</font>
+                            <font color=#FCA4F8>CSS</font>
+                            <font color=#FC8BF7>Python</font>
+                            <font color=#FC8B91>GoogleVisionAPI</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--Humanity Section-->
+    <!-- 
+    <section class = "s1">
+        <div class = "humanity-container">
+
+        </div>
+    </section> -->
+    
+    <!--Creativity Section-->
+    <!--
+    <section class="s1">
+        <div class = "creative-container">
+
+        </div>
+    </section> -->
 
     <script src="script.js"></script>
 </body>
