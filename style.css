@@ -256,12 +256,12 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3em 20em 20em;
+    grid-template-rows: 3em 20em;
     grid-row-gap: 60px;
     grid-column-gap: 10px;
     grid-template-areas: 
     'projects-wrapper projects-wrapper projects-wrapper'
-    'proj1-card proj2-card proj3-card'
+    'proj-card proj2-card proj3-card'
     ;
 }
 
@@ -269,7 +269,8 @@
     grid-area: projects-wrapper;
     text-align: center;
     color: grey;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
     line-height: 0.8;
@@ -278,7 +279,8 @@
 
 .proj-card{
     border-radius: 15%;
-    background-color: grey ;
+    color: #C3E8E8;
+    background-color: #005757;
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 20px;
@@ -329,6 +331,56 @@
     margin-left: 20px;
     margin-top: -230px;
 }
+
+/* OTHER SECTION */
+
+.others-container{
+    margin-right: 10px;
+    margin-left: 10px;
+    /* margin-bottom: 10px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5em 20em;
+    grid-template-areas: 
+    'projects-wrapper projects-wrapper projects-wrapper'
+    'other1-column other2-column other3-column'
+    ;
+}
+
+.other1-column{
+    grid-area: other1-column;
+    /* padding-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: teal;
+    color: #F7EBEB;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 40px;
+}
+
+.other2-column{
+    grid-area: other2-column;
+    text-align: center;
+    background-color: #C3E8E8;
+    color: #005757;
+    font-size: 40px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+
+.other3-column{
+    grid-area: other3-column;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: teal;
+    color: #F7EBEB;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 40px;
+}
+
+
 /* #learntoread{
     height: 50%;
     width: 50%;
