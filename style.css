@@ -297,6 +297,8 @@
     display: flex;
     justify-content: space-around;
     font-family: 'Inconsolata', monospace;
+    position: static;
+    margin-top: 10px
 }
 
 #link{
@@ -305,25 +307,28 @@
     font-size: 20px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 220px;
+    margin-top: 210px;
     border-radius: 30%;
     padding: 4px 4px;
+    position: static;
 }
 
 #hack{
-    margin-top: 150px; 
+    /* margin-top: 150px;  */
     font-size: 13px;
     color: #C3E8E8;
     border-radius: 30%;
     padding: 4px 4px;
+    position: static;
 } 
 
 .technologies{
     justify-content: space-between;
-    margin-top: 150px; 
+    /* margin-bottom: 0px;  */
     font-size: 13px;
     border-radius: 30%;
     padding: 4px 4px;
+    position: static;
 } 
 
 .description{
@@ -340,16 +345,16 @@
     /* margin-bottom: 10px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5em 20em;
+    grid-template-rows: 5em 10em 10em;
     grid-template-areas: 
     'projects-wrapper projects-wrapper projects-wrapper'
     'other1-column other2-column other3-column'
-    ;
+    'other4-column other4-column other4-column';
 }
 
 .other1-column{
     grid-area: other1-column;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -361,6 +366,7 @@
 
 .other2-column{
     grid-area: other2-column;
+    padding-top: 20px;
     text-align: center;
     background-color: #C3E8E8;
     color: #005757;
@@ -371,6 +377,7 @@
 
 .other3-column{
     grid-area: other3-column;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -380,6 +387,18 @@
     font-size: 40px;
 }
 
+.other4-column{
+    grid-area: other4-column;
+    padding-top: 40px;
+    /* padding-bottom: 40px; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: teal;
+    color: #F7EBEB;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 40px;
+}
 
 /* #learntoread{
     height: 50%;
